@@ -1,0 +1,15 @@
+torchinfo
+scipy>=0.14
+matplotlib
+pandas
+tensorboard
+pytorch-lightning==1.6.0
+lightning-bolts
+gpustat
+mosaicml
+ffcv
+numba
+opencv-python
+cupy-cuda11x
+compilers
+timm

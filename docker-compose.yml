@@ -1,0 +1,18 @@
+version: '3.3'
+services:
+    tailor:
+        ports:
+            - '6006:6006'
+        container_name: tailor
+        privileged: true
+        volumes:
+            - '/dev:/dev'
+            - '$PWD:/app/pytorch'
+        image: tailor
+        deploy:
+          resources:
+            reservations:
+              devices:
+                - driver: nvidia
+                  count: all
+                  capabilities: [gpu]
